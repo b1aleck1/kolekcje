@@ -8,14 +8,12 @@ public class Order implements Comparable<Order> {
     private LocalDate orderDate;
     private double amount;
 
-    // Konstruktor
     public Order(int orderNumber, LocalDate orderDate, double amount) {
         this.orderNumber = orderNumber;
         this.orderDate = orderDate;
         this.amount = amount;
     }
 
-    // Gettery
     public int getOrderNumber() {
         return orderNumber;
     }
