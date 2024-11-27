@@ -6,9 +6,8 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 public class Main {
-    // Mapa do przechowywania słów i definicji bez uporządkowania
+
     private static Map<String, String> hashMapDictionary = new HashMap<>();
-    // Mapa do przechowywania słów i definicji w porządku alfabetycznym
     private static Map<String, String> treeMapDictionary = new TreeMap<>();
 
     public static void main(String[] args) {
@@ -37,21 +36,18 @@ public class Main {
         scanner.close();
     }
 
-    // Metoda dodająca słowo i definicję do obu map
     private static void addWord(Scanner scanner) {
         System.out.print("Podaj słowo: ");
         String word = scanner.nextLine();
         System.out.print("Podaj definicję: ");
         String definition = scanner.nextLine();
 
-        // Dodanie słowa i definicji do obu map
         hashMapDictionary.put(word, definition);
         treeMapDictionary.put(word, definition);
 
         System.out.println("Dodano słowo i definicję do słownika.");
     }
 
-    // Metoda wyświetlająca wszystkie słowa i definicje z danej mapy
     private static void displayWords(Map<String, String> dictionary, String mapType) {
         System.out.println("\nSłownik (" + mapType + "):");
         for (Map.Entry<String, String> entry : dictionary.entrySet()) {
