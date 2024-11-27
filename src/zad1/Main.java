@@ -1,6 +1,5 @@
 package zad1;
 
-
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.TreeSet;
@@ -17,9 +16,7 @@ public class Main {
         String[] input = sc.nextLine().split(" ");
 
         measureAdditionTime(input);
-
         displaySets();
-
         measureRemovalTime(input);
     }
 
@@ -45,14 +42,12 @@ public class Main {
     private static void measureRemovalTime(String[] input) {
         long startTime, endTime;
 
-
         startTime = System.nanoTime();
         for (String s : input) {
             hs.remove(s);
         }
         endTime = System.nanoTime();
         System.out.println("Czas usuwania z HashSet: " + (endTime - startTime) + " ns");
-
 
         startTime = System.nanoTime();
         for (String s : input) {
