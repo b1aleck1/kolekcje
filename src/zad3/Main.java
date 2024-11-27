@@ -53,5 +53,13 @@ public class Main {
         for (Map.Entry<String, String> entry : dictionary.entrySet()) {
             System.out.println("Słowo: " + entry.getKey() + ", Definicja: " + entry.getValue());
         }
+
+        // inne sposoby wyświetlania map:
+        // for (String key : dictionary.keySet()) {
+        //    System.out.println("Słowo: " + key + ", Definicja: " + dictionary.get(key)); }
+        //
+        //dictionary.forEach((key, value) ->
+        //    System.out.println("Słowo: " + key + ", Definicja: " + value));
+
     }
 }
