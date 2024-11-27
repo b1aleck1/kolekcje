@@ -1,5 +1,5 @@
 package zad10;
-
+//
 import java.util.Arrays;
 
 public class Main {

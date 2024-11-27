@@ -1,7 +1,6 @@
 package zad10;
-
 import java.util.*;
-
+//
 public class RiverManager {
 
     private Map<String, River> riversPolish = new TreeMap<>();

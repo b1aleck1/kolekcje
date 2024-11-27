@@ -1,5 +1,5 @@
 package zad3;
-
+//
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
