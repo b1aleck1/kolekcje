@@ -29,7 +29,7 @@ public class Car {
     public boolean equals(Object obj) {
         if (this == obj) return true;  // Porównanie referencji
         if (obj == null || getClass() != obj.getClass()) return false;  // Sprawdzenie typu
-        Car car = (Car) obj;
+        Car car = (Car) obj; // Rzutowanie obiektu na typ Car
         return Objects.equals(licensePlate, car.licensePlate);  // Porównanie po numerze rejestracyjnym
     }
 
@@ -40,6 +40,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" + "brand='" + brand + '\'' + ", model='" + model + '\'' + ", licensePlate='" + licensePlate + '\'' + '}';
+        return "Car {" + "brand = '" + brand + '\'' + ", model = '" + model + '\'' + ", licensePlate = '" + licensePlate + '\'' + '}';
     }
 }

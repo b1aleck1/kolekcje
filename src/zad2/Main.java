@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int numberOfElements = 100000;
+        int numberOfElements = 10000;
         List<Integer> arrayList = new ArrayList<>();
         List<Integer> linkedList = new LinkedList<>();
         Random rand = new Random();
@@ -24,7 +24,7 @@ public class Main {
     public static void testAdding(List<Integer> list, Random rand, int numberOfElements) {
         long startTime = System.nanoTime();
         for (int i = 0; i < numberOfElements; i++) {
-            list.add(rand.nextInt(1000)); // Losowa liczba z zakresu 0-999
+            list.add(rand.nextInt(1000));
         }
         long endTime = System.nanoTime();
         System.out.println("Czas dodawania do " + list.getClass().getSimpleName() + ": " + (endTime - startTime) + " ns");

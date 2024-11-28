@@ -13,7 +13,7 @@ public class Main {
         cars.add(new Car("BMW", "X5", "KRA76H5"));
         cars.add(new Car("Tesla", "Model S", "DW2876U"));  // Ten sam numer rejestracyjny
 
-        System.out.println("Samochody w HashSet:");
+        System.out.println("Cars in HashSet:");
         for (Car car : cars) {
             System.out.println(car);
         }
